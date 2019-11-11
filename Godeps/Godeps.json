@@ -1,0 +1,26 @@
+{
+	"ImportPath": "github.com/randomtask1155/hqmon",
+	"GoVersion": "go1.12",
+	"GodepVersion": "v80",
+	"Deps": [
+		{
+			"ImportPath": "github.com/randomtask1155/hqserver/device",
+			"Rev": "ce547ce68feed14c3c862408e572f794b8e18e54"
+		},
+		{
+			"ImportPath": "github.com/sendgrid/rest",
+			"Comment": "v2.4.1-22-g35c777e",
+			"Rev": "35c777e9ea9b3bcfc734f6ad596836fbf5177687"
+		},
+		{
+			"ImportPath": "github.com/sendgrid/sendgrid-go",
+			"Comment": "v3.5.0-1-gd1c72cf",
+			"Rev": "d1c72cf7d640fb33478848959485bb0cf916809b"
+		},
+		{
+			"ImportPath": "github.com/sendgrid/sendgrid-go/helpers/mail",
+			"Comment": "v3.5.0-1-gd1c72cf",
+			"Rev": "d1c72cf7d640fb33478848959485bb0cf916809b"
+		}
+	]
+}
