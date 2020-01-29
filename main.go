@@ -34,7 +34,7 @@ func getStatus() ([]device.DeviceStatus,error) {
 		},
 	}
 	client := &http.Client{Transport: tr,
-			Timeout: 10 * time.Second,
+			Timeout: 30 * time.Second,
 	}
 
 	r, err := client.Get(monEndpoint)
@@ -48,6 +48,7 @@ func getStatus() ([]device.DeviceStatus,error) {
 		logger.Println(err)
 		return mon, err
 	}
+	defer r.Body.Close()
 	decoder := json.NewDecoder(bytes.NewBuffer(body))
 	err = decoder.Decode(&mon)
 	if err != nil {
