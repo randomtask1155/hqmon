@@ -1,4 +1,4 @@
-FROM golang:1.12 AS builder
+FROM golang:1.15 AS builder
 LABEL maintainer="Daniel Lynch <danplynch@gmail.com>"
 RUN mkdir -p /go/src/github.com/randomtask1155/hqmon
 WORKDIR /go/src/github.com/randomtask1155/hqmon
